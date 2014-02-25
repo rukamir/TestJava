@@ -1,6 +1,6 @@
 package com.Test.Inheritance;
 
-public class Protein extends Product implements IProduct{
+public class Protein extends Product{
 	private int Calories;
 	
 	public Protein(int qnt, String units, float price) {
@@ -8,6 +8,12 @@ public class Protein extends Product implements IProduct{
 		super.m_iQuantity = qnt;
 		super.m_sUnit = units;
 		super.m_fPrice = price;
+		
+	}
+
+	@Override
+	public void Use(int grams) {
+		// TODO Auto-generated method stub
 		
 	}
 }
