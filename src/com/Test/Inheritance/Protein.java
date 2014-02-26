@@ -12,8 +12,7 @@ public class Protein extends Product{
 	}
 
 	@Override
-	public void Use(int grams) {
-		// TODO Auto-generated method stub
-		
+	public void Use(int units) {
+		super.m_iQuantity -= units;
 	}
 }
